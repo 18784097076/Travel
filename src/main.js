@@ -3,7 +3,6 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import fastClick from 'fastclick'
 // 重置样式  styles就代表src/assets/styles，类似@，起了别名
 import 'styles/reset.css'
 // 解决1像素边框
@@ -13,7 +12,13 @@ import 'styles/iconfont.css'
 
 Vue.config.productionTip = false
 // 解决click300ms延迟
+import fastClick from 'fastclick'
 fastClick.attach(document.body)
+
+// 引入swiper插件
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+import 'swiper/dist/css/swiper.css'
+Vue.use(VueAwesomeSwiper)
 
 /* eslint-disable no-new */
 new Vue({
