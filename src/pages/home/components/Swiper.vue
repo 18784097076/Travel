@@ -40,7 +40,7 @@ export default {
   overflow: hidden;
   width:100%;
   height: 0;          //这里写31.25%是相对于父级的height
-  padding-bottom: 31.25%;   //padding %是相对于元素的width
+  padding-bottom: 26.7%;   //padding %是相对于元素的width
   background-color: #eee;  //图片未加载完
   .swiper-img {
     width: 100%;
